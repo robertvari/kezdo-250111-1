@@ -12,3 +12,6 @@
 # float (floating point)
 3.14
 2.32345666
+
+# lists
+["Csaba", "Kriszta", "Tamás"]
