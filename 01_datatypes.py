@@ -1,3 +1,11 @@
+# bool
+True
+False
+
+# numbers can be bool: 0 = False 1 = True
+# booleans in C++: true, false
+# booleans in python: True, False
+
 # string (str)
 "Hello World"
 "Hello my name is Robert."
