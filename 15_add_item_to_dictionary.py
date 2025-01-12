@@ -1,12 +1,14 @@
-import json
+import json, os
 
 # Create an empty dictionary for storing user data
 user_database = {}
 
 
-# TODO check if user_data.json exists
-# TODO if it does, open it and update user_database with the content of the file
-
+# check if user_data.json exists
+if os.path.exists("user_data.json"):
+    # if it does, open it and update user_database with the content of the file
+    with open("user_data.json") as f:
+        user_database = json.load(f)
 
 # Ask user for data
 email = input("What is your email? ")
