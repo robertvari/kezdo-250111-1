@@ -25,9 +25,15 @@ player_number = input("What is my number? ")
 # TODO do a check if their number == magic_number
 while magic_number != player_number:
     max_tries -= 1
+    if max_tries == 0:
+        break
+
     print(f"Wrong guess. Try again. You have {max_tries} tries left.")
     player_number = input("What is my number? ")
 
 
-# TODO endgame condition
-print("You guessed my number! Congrats!!!!")
+# endgame condition
+if magic_number == player_number:
+    print("You guessed my number! Congrats!!!!")
+else:
+    print("Sorry, maybe next time :(")
