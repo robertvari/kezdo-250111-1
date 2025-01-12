@@ -1,4 +1,4 @@
-today = "saturday"
+today = "monday"
 
 if today == "saturday" or today == "sunday":
     print("This is a weekend")
